@@ -1,0 +1,215 @@
+/* 1400, 1199, 991, 767, 575, 480, 360, 320 */
+/* CSS Index
+-----------------------------------
+1.default css
+-----------------------------------
+*/
+/* min-width 1430 */
+@media (min-width: 1430px) {
+}
+/* max-width 1399 */
+@media (max-width: 1399.98px) {
+}
+/* max-width 1199 */
+@media (max-width: 1199.98px) { 
+
+    .main-menu nav ul li {
+        display: inline-block;
+        margin-right: 45px;
+    }
+}
+/* max-width 1399 - min-width 992*/
+@media (max-width: 1199.98px) and (min-width: 992px) {
+}
+/* max-width 991 */
+@media (max-width: 991.98px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: 26px;
+        padding-left: 26px;
+    }
+
+    /* all section padding fix */
+    .wealth-management-area , .invested-area {
+        padding: 70px 0;
+    }
+    /* all section padding fix */
+
+    /* wealth management section start */
+    .wealth-management-area .row{
+        --bs-gutter-x:24px;
+      }
+    .wealth-management-area h4 {
+        margin-bottom: 50px;
+    }
+    /* wealth management section end  */
+
+    /* full width video area start*/
+    .full-width-video-area .container {
+        padding: 0;
+    }
+    .full-width-video-area {
+        padding-bottom: 50px;
+    }
+    /* full width video area end */
+
+    /* footer section start */
+    .footer-logo {
+        padding-bottom: 30px;
+        margin: 0 auto 64px;
+        text-align: center;
+    }
+    .footer-copyright {
+        text-align: center;
+    }
+    .copy-right-end-wrapper{
+        justify-content: center !important;
+        margin-top: 25px;
+        align-items: center !important;
+    }
+    /* footer section end */
+
+    /*  mobile menu start */
+    .mobile-version .logo img {
+        max-width: 200px;
+    }
+    
+    /*  mobile menu end */
+
+    /* 991 end */
+   
+}
+/* max-width 767 */
+@media (max-width: 767.98px) { 
+
+    /* wealth management section start  */
+    .wealth-management-area .border-right::before {
+        top: auto;
+        bottom: 0;
+        height: 1px;
+        width: 50%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .wealth-management-area .row {
+        --bs-gutter-y: 35px;
+    }
+    .wealth-management-wrapper{
+        padding-bottom: 32px;
+    }
+    .wealth-management-area .col-lg-4:last-child .wealth-management-wrapper{
+        padding-bottom: 0;
+    }
+
+    /* wealth management section end  */
+
+    /* invested section start */
+    .invested-time-wrapper {
+        margin-bottom: 38px;
+    }
+    /* invested section end */
+
+    /* our expertise area section start  */
+    .our-expertise-area {
+        padding: 108px 0;
+    }
+    .current {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    .nice-select .option {
+        font-size: 16px;
+        white-space: pre-wrap;
+    }
+    /* our expertise area section end  */
+
+
+    /* footer section  start */
+    .footer-logo a img {
+        max-width: 218px;
+    }
+    .footer-area .container-sm {
+        padding: 0 26px;
+    }
+    /* footer section  end */
+    /*  mobile menu start */
+    .mobile-version .logo img {
+        max-width: 164px;
+    }
+
+    /*  mobile menu end */
+    
+
+    /* 767 end */
+
+
+
+}
+/* max-width 575 */
+@media (max-width: 575.98px) {
+    .container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    /* all section padding fix */
+    .wealth-management-area {
+        padding: 50px 0;
+    }
+    .invested-area{
+        padding: 65px 0 110px;
+    }
+    /* all section padding fix */
+
+    /* wealth management section start*/
+    .wealth-management-wrapper p {
+        font-size: 16px;
+    }
+    .wealth-management-area h4 {
+        font-size: 20px;
+    }
+    /* wealth management section end */
+
+    /* full width video section start  */
+    .full-width-video-wrapper img:first-child {
+        height: 275px;
+    }
+    .single-logo {
+        right: 26px;
+        bottom: 13px;
+        height: 31px;
+        width: 31px;
+    }
+    /* full width video section end  */
+  
+}
+/* max-width 479 */
+@media (max-width: 479.98px) {
+ 
+  
+}
+/* max-width 383 */
+@media (max-width: 383.98px) {
+  
+}
+/* max-width 360 */
+@media (max-width: 340px) {
+    .footer-area {
+        padding: 50px 0 10px;
+    }
+    .copy-right-wrapper ul li:first-child.copy-right-link{
+        border-right: 0px;
+        padding: 0;
+    }
+    .footer-logo {
+        padding-bottom: 30px;
+        margin: 0 auto 45px;
+        text-align: center;
+    }
+    .mobile-version .logo img {
+        max-width: 120px;
+    }
+    .offcanvas-body {
+        padding: 34px 40px 98px;
+    }
+  
+}
