@@ -18,6 +18,11 @@
         margin-right: 45px;
     }
 }
+@media (max-width: 1105px) {
+    .advisor-img-1 {
+        left: 45%;
+    }
+} 
 /* max-width 1399 - min-width 992*/
 @media (max-width: 1199.98px) and (min-width: 992px) {
 }
@@ -72,14 +77,87 @@
     .mobile-version .logo img {
         max-width: 200px;
     }
-    
     /*  mobile menu end */
+
+    /* financial-planning-area start*/
+    .cta-area::before {
+        top: 0;
+        height: 100%;
+        transform: none;
+        margin-top: 0;
+    }
+    /* financial-planning-area end*/
+
+    /* swm section wrapper section start */
+    .swm-section-info::before , .swm-section-info::after{
+        display: none;
+    }
+    .swm-center-icon{
+        display: none !important;
+    }
+    .swm-card-wrapper {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .swm-section-info .col-lg-6:nth-child(2) .swm-card-wrapper, .swm-section-info .col-lg-6:nth-child(4) .swm-card-wrapper {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .swm-section-info .col-lg-6 .swm-card-wrapper {
+        border-bottom: 1px solid rgba(149, 172, 186, 0.6);
+    }
+    .swm-section-info .col-lg-6:first-child .swm-card-wrapper{
+        padding-top: 0;
+    }
+    .swm-section-info .col-lg-6:last-child .swm-card-wrapper {
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+    /* swm section wrapper section end */
+
+    /* service wrapper section start*/
+    .advisor-img-1 {
+        top: 0;
+        height: 100%;
+        left: 50%;
+        opacity: 0.3;
+        transform: translateX(-50%);
+    }
+    .advisor-img-2 {
+        transform: translateX(-50%);
+        opacity: 0.3;
+    }
+    .advisor-area .services-wrapper {
+        padding-left: 0;
+    }
+    .services-area {
+        margin-top: 50px;
+    }
+    /* service wrapper section end  */
+
+    /* featured-article start */
+    .featured-article-info {
+        padding: 50px 26px;
+    }
+    /* featured-article end */
 
     /* 991 end */
    
 }
 /* max-width 767 */
 @media (max-width: 767.98px) { 
+
+    /* heading  */
+    h1{
+        font-size: 36px;
+    }
+    /* heading  */
+
+    /* banner area start */
+    .banner-section.version-2 {
+        min-height: 191px;
+    }
+    /* banner area end */
 
     /* wealth management section start  */
     .wealth-management-area .border-right::before {
@@ -123,6 +201,20 @@
     }
     /* our expertise area section end  */
 
+    /* financial-planning-area start*/
+    .financial-planning-area {
+        padding: 50px 0;
+    }
+    
+    .content-block-wrapper p {
+        font-size: 18px;
+    }
+    .content-block-info {
+        padding-left: 0;
+    }
+
+    /* financial-planning-area end*/
+
 
     /* footer section  start */
     .footer-logo a img {
@@ -138,6 +230,51 @@
     }
 
     /*  mobile menu end */
+
+    /* cta area start */
+    .cta-area {
+        padding: 82px 0 106px;
+        margin: 75px 0 102px;
+        text-align: center;
+    }
+    .cta-content h3 , .cta-content .number {
+        font-size: 30px;
+    }
+    /* cta area end */
+
+    /* how do you section start */
+    .how-do-you-area , .how-do-you-area.cricle-bg-info {
+        padding: 50px 0;
+    }
+    /* how do you section end */
+
+    /* news-event-wrapper section start  */
+    .filter-btn-wrapper {
+        gap: 12px;
+    }
+    .filter-wrapper {
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+    .filter-wrapper  span {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .filter-btn {
+        font-size: 15px;
+        padding: 13px 24.5px;
+    }
+    .news-event-info h3 {
+        font-size: 25px;
+    }
+    .news-event-wrapper .row {
+        --bs-gutter-y: 40px;
+        --bs-gutter-x: 24px;
+    }
+    .news-event-area {
+        padding: 50px 0;
+    }
+    /* news-event-wrapper section end */
     
 
     /* 767 end */
@@ -184,14 +321,34 @@
 }
 /* max-width 479 */
 @media (max-width: 479.98px) {
+
+    /* news-event-area section start */
+    .filter-btn {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+    /* news-event-area section end */
  
   
 }
-/* max-width 383 */
-@media (max-width: 383.98px) {
+
+/* max-width 360 */
+@media (max-width: 360.98px) {
+     /* heading */
+     h1 {
+        font-size: 30px;
+    }
+    /* heading */
+
+    /*  news-event-area section start */
+    .filter-btn {
+        padding: 8px;
+    }
+   
+    /*  news-event-area section end  */
   
 }
-/* max-width 360 */
+/* max-width 340 */
 @media (max-width: 340px) {
     .footer-area {
         padding: 50px 0 10px;
@@ -211,5 +368,6 @@
     .offcanvas-body {
         padding: 34px 40px 98px;
     }
+   
   
 }
