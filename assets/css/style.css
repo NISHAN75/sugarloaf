@@ -27,6 +27,17 @@ body{
 
 /* deafult css start */
 
+/* fonts call */
+@font-face {
+  font-family: 'HelveticaNeue' , sans-serif;
+  src: url('../fonts/HelveticaNeueRegular.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 
 /* font family */
@@ -120,6 +131,10 @@ h6{
 .bg-french-blue{
   background-color: #0077C8;
 }
+.bg-alabaster {
+  background-color:#FAFAFA;
+}
+
 
 
 .mb-p p:last-child{
@@ -798,9 +813,49 @@ h6{
 
 /* single-article section end */
 
+
+/* our Process  start */
+
+.content-block-wrapper .vision-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.our-process-info .content-block-wrapper {
+  margin-bottom: 55px;
+}
+.our-process-info .content-block-wrapper:last-child{
+  margin-bottom: 0;
+}
+
+.plan-section-area{
+  padding: 190px 0 158px;
+}
+/* our Process end */
+
+/* plan details section start */
+.plan-details-area {
+  padding: 161px 0 84px;
+}
+.plan-info-content p {
+  font-size: 20px;
+}
+.plan-title h2{
+  font-size: 35px;
+}
+.plan-content {
+  padding: 55px 0;
+}
+.plan-details-area .plan-content:first-child{
+  padding-top: 0;
+}
+.plan-details-area .plan-content:last-child{
+  padding-bottom: 0;
+}
+/* plan details section end */
+
 /* cta-area section start */
 .cta-area {
-  padding: 90px 0 72px;
+  padding: 90px 0 151px;
 }
 .cta-content h3 {
   color: #000000;
@@ -817,8 +872,8 @@ h6{
 .cta-content .sl-btn {
   margin-top: 35px;
 }
-.cta-btn-wrapper {
-  margin-top: 151px;
+.next-page-area {
+  padding-bottom: 89px;
 }
 .cta-area::before {
   position: absolute;
@@ -830,7 +885,7 @@ h6{
   content: "";
   z-index: -1;
   transform: translateY(-50%);
-  margin-top: -90px;
+  margin-top: -29px;
 }
 .cta-bg {
   left: 50%;
@@ -847,7 +902,12 @@ h6{
   font-weight: 600;
   line-height: 1;
   max-width: 536px;
+  transition: all 0.3s linear;
 }
+.cta-btn-wrapper a:hover{
+  color: #0077b5;
+}
+
 
 /* modal css */
 .modal-backdrop {
@@ -873,11 +933,17 @@ h6{
     --bs-btn-close-focus-shadow: none;
     --bs-btn-close-focus-opacity: 1;
 }
-.btn-close svg text{
+.btn-close span {
+  display: inline-block;
+  font-family: 'HelveticaNeue' , sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  color: #0077C8;
+  font-weight: 400;
   transition: all 0.3s linear;
 }
-.btn-close svg:hover text{
-  fill: #fff;
+.btn-close span:hover{
+  color: #fff;
 }
 .modal-body {
   position: relative;
@@ -904,6 +970,9 @@ h6{
 
 
 /* cta-area section end */
+
+
+
 
 
 

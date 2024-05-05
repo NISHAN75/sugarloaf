@@ -275,6 +275,47 @@
         padding: 50px 0;
     }
     /* news-event-wrapper section end */
+
+    /* single article section start  */
+    .single-article-section {
+        padding: 50px 0;
+    }
+    .single-article-inner-content .post-title h1 {
+        font-size: 25px;
+    }
+    .socials-info-wrapper {
+        justify-content: center !important;
+    }
+    /*  single article section end*/
+
+    /* our process section start */
+    .content-block-wrapper .vision-title{
+        font-size: 35px;
+    }
+
+    /* our process section end  */
+
+    /* plan section start */
+    .plan-section-area {
+        padding: 71px 0 52px;
+    }
+    .content-block-wrapper p {
+        font-size: 18px;
+    }
+    /* plan section end */
+
+    /* plan details section start */
+    .plan-details-area {
+        padding: 63px 0 0px;
+    }
+    .plan-content.bg-alabaster {
+        background-color: transparent;
+    }
+    .plan-content {
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    /* plan details section end */
     
 
     /* 767 end */
