@@ -24,6 +24,10 @@
     .login-main-img {
         padding-right: 40px;
     }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: 26px;
+        padding-left: 26px;
+    }
 
 }
 @media (max-width: 1105px) {
@@ -44,10 +48,7 @@
 }
 /* max-width 991 */
 @media (max-width: 991.98px) {
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        padding-right: 26px;
-        padding-left: 26px;
-    }
+
 
     /* all padding fix */
     .wealth-management-area , .invested-area ,
@@ -61,11 +62,11 @@
     /* all padding fix */
 
     /* wealth management section start */
-    .wealth-management-area .row{
-        --bs-gutter-x:24px;
-      }
+    .wealth-management-area .row {
+       --bs-gutter-x: 20px;
+    }
     .wealth-management-area h4 {
-        margin-bottom: 50px;
+       margin-bottom: 40px;
     }
     /* wealth management section end  */
 
@@ -185,6 +186,12 @@
         padding-bottom: 8px;
     }
     /* team modal css  */
+    
+    /* our team section start */
+    .counter-wraper {
+        margin-bottom: 30px;
+    }
+    /* our team section end */
 
     /* sugarloaf-gives-area  start  */
     .sugarloaf-gives-area .row {
@@ -211,6 +218,9 @@
     .banner-section.version-2 {
         min-height: 191px;
     }
+    .banner-section {
+        min-height: 423px;
+    }
     /* banner area end */
 
     /* wealth management section start  */
@@ -227,6 +237,9 @@
     }
     .wealth-management-wrapper{
         padding-bottom: 32px;
+    }
+    .wealth-management-wrapper h2 {
+        font-size: 36px;
     }
     .wealth-management-area .col-lg-4:last-child .wealth-management-wrapper{
         padding-bottom: 0;
@@ -276,6 +289,15 @@
     }
     .footer-area .container-sm {
         padding: 0 26px;
+    }
+    .footer-area {
+        padding: 43px 0 12px;
+    }
+    .footer-logo {
+        margin: 0px auto 24px;
+    }
+    .copy-right-end-wrapper {
+        margin-top: 12px;
     }
     /* footer section  end */
     /*  mobile menu start */
@@ -364,7 +386,7 @@
 
     /* plan details section start */
     .plan-details-area {
-        padding: 63px 0 0px;
+        padding: 63px 0 16px;
     }
     .plan-content.bg-alabaster {
         background-color: transparent;
@@ -373,15 +395,16 @@
         padding: 0;
         padding-bottom: 40px;
     }
+    .plan-title h2 {
+        margin-bottom: 17px;
+    }
     /* plan details section end */
 
     /* our team section start */
     .counter-info {
         font-size: 50px;
     }
-    .counter-wraper {
-        margin-bottom: 30px;
-    }
+
     .counter-wraper h5 {
         margin-top: 25px;
     }
@@ -428,7 +451,7 @@
     /* team modal css  */
 
     /* contact section start */
-    .location-info h5 {
+    .location-info .address-title {
         font-size: 36px;
     }
     .contact-bottom-btn {
@@ -526,6 +549,12 @@
         width: 100%;
     }
 
+    /* mobile  menu start */
+    .mobile-menu-wrapper ul li a {
+        max-width: 221px;
+    }
+    /* mobile  menu end */
+
 
     /* login page end */
   
@@ -562,6 +591,10 @@
         padding: 50px 0;
     }
     /*  news-event-area section end  */
+    .sl-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
   
 }
 /* max-width 340 */
@@ -583,6 +616,9 @@
     }
     .offcanvas-body {
         padding: 34px 40px 98px;
+    }
+    .mobile-offcanvas .offcanvas-body {
+        padding: 34px 30px 95px;
     }
    
   

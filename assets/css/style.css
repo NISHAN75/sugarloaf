@@ -36,7 +36,9 @@ body{
   font-style: normal;
   font-display: swap;
 }
-
+.z-5{
+  z-index: 5;
+}
 
 
 
@@ -51,15 +53,13 @@ body{
   font-family: "sorts-mill-goudy",serif !important; 
 }
 /* container */
+.container-xl{
+  max-width: 1161px;
+}
 .container{
   max-width: 1110px;
 }
-.container-md{
-  max-width: 1065px;
-}
-.container-sm{
-  max-width: 1112px;
-}
+
 .container-xs{
   max-width: 974px;
 }
@@ -463,8 +463,11 @@ textarea:focus{
 .offcanvas-header {
   padding: 23px 26px;
 }
-.offcanvas-body {
-  padding: 34px 57px 98px;
+.mobile-offcanvas .offcanvas-body {
+  padding: 34px 57px 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mobile-menu-wrapper ul li a {
   font-size: 24px;
@@ -474,6 +477,13 @@ textarea:focus{
   padding-bottom: 25px;
   display: block;
   transition: all 0.3s linear;
+  letter-spacing: 2.4px;
+}
+.mobile-client-btn {
+  font-size: 18px;
+  color: #B4B9C3;
+  letter-spacing: 1.8px;
+  font-weight: 500;
 }
 .menu-info{
   position: relative;
@@ -508,11 +518,13 @@ textarea:focus{
 .mobile-menu-wrapper ul li .sub-menu {
   padding-bottom: 32px;
   display: none;
+  padding-left: 25px;
 }
 .mobile-menu-wrapper ul li .sub-menu li a {
   font-size: 18px;
   line-height: 1;
   padding-bottom: 20px;
+  letter-spacing: normal;
 }
 .mobile-menu-wrapper ul li .sub-menu > li a:hover{
   color: red;
@@ -570,6 +582,9 @@ textarea:focus{
 }
 .video-area{
   z-index: 1;
+}
+.scroll-btn {
+  letter-spacing: 1.12px;
 }
 
 /* banner section end */
@@ -678,9 +693,7 @@ textarea:focus{
 .interested-content-wrapper p {
   margin-bottom: 35px;
 }
-.our-expertise-area .container{
-  z-index: 5;
-}
+
 /* our expertise-area end */
 
 
@@ -755,6 +768,9 @@ textarea:focus{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.swm-section-wrapper .container{
+  max-width: 1065px;
 }
 /* swm card section end */
 
@@ -866,7 +882,7 @@ textarea:focus{
   line-height: 1;
   color: #4F5F62;
   font-weight: 400;
-  padding: 13px 38.5px;
+  padding: 13px 45px;
   border: 1px solid #95ACBA;
   background: #FFFFFF;
   transition: all 0.3s linear;
@@ -921,8 +937,8 @@ textarea:focus{
   width: 10px;
 }
 .socials-info-wrapper {
-  margin-top: 30px;
-  margin-bottom: 22px;
+  margin-top: 22px;
+  margin-bottom: 45px;
 }
 .single-article-section .sl-btn {
   margin-bottom: 54px;
@@ -964,27 +980,32 @@ textarea:focus{
 .plan-section-area{
   padding: 190px 0 158px;
 }
+.our-process-info .content-block-wrapper p {
+  margin-bottom: 27px;
+}
 /* our Process end */
 
 /* plan details section start */
 .plan-details-area {
-  padding: 161px 0 84px;
+  padding: 96px 0 29px;
 }
 .plan-info-content p {
   font-size: 20px;
 }
-.plan-title h2{
+
+.plan-title h2 {
   font-size: 35px;
+  max-width: 412px;
 }
 .plan-content {
   padding: 55px 0;
+  transition: all 0.3s linear;
 }
-.plan-details-area .plan-content:first-child{
-  padding-top: 0;
+.plan-content:hover{
+  background-color: #FAFAFA;
 }
-.plan-details-area .plan-content:last-child{
-  padding-bottom: 0;
-}
+
+
 
 /* plan details section end */
 
@@ -1011,8 +1032,8 @@ textarea:focus{
   font-weight: 600;
   line-height: 1.5;
   color: #242F45;
+  max-width: 278px;
 }
-
 
 .fun-fat-area {
   padding: 135px 0;
@@ -1088,12 +1109,17 @@ textarea:focus{
 .contact-form .form-group{
   margin-bottom: 30px;
 }
-.contact-form .form-group input ,
-.contact-form .form-group textarea{
+.contact-form .form-group input, .contact-form .form-group textarea {
   width: 100%;
   background-color: #FAFAFA;
   border: 0;
   padding: 8px 10px;
+  color: #4F5F62;
+  font-size: 17px;
+  line-height: 1.17;
+}
+.contact-form .form-group textarea{
+  padding: 11px 29px;
 }
 .contact-bottom-btn{
   margin-top: 40px;
@@ -1116,7 +1142,7 @@ textarea:focus{
 .map-area {
   padding-bottom: 135px;
 }
-.location-info h5 {
+.location-info .address-title {
   font-size: 40px;
 }
 
