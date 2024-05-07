@@ -148,6 +148,128 @@ h6{
 
 
 
+/* modal css */
+.modal-backdrop {
+  --bs-backdrop-bg: #242F45;
+  --bs-backdrop-opacity: 0.91;
+}
+.modal {
+  --bs-modal-width: 624px;
+  --bs-modal-bg: #242F45;
+  --bs-modal-border-radius: 0;
+  --bs-modal-border-color: transparent;
+}
+.modal-header {
+  padding: 33px;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.btn-close {
+    --bs-btn-close-bg: none;
+    --bs-btn-close-opacity: 1;
+    --bs-btn-close-hover-opacity: 1;
+    --bs-btn-close-focus-shadow: none;
+    --bs-btn-close-focus-opacity: 1;
+}
+.btn-close span {
+  display: inline-block;
+  font-family: 'HelveticaNeue' , sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  color: #0077C8;
+  font-weight: 400;
+  transition: all 0.3s linear;
+}
+.team-modal .btn-close span{
+  color: #242F45;
+}
+.btn-close span:hover{
+  color: #fff;
+}
+.team-modal .btn-close span:hover{
+  color: #0077C8;
+}
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 0px 110px 100px 64px;
+}
+.modal-body p {
+  font-size: 17px;
+  line-height: 1.37;
+  margin-bottom: 32px;
+}
+.modal-info-wrapper h2 {
+  font-size: 30px;
+  margin-bottom: 23px;
+}
+.modal-body .modal-info-wrapper p {
+  color: #0077C8;
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+/* team modal */
+
+.team-modal.modal {
+  --bs-modal-width: 1035px;
+  --bs-modal-bg: transparent;
+  --bs-modal-border-radius: 0;
+  --bs-modal-border-color: transparent;
+}
+.team-modal.modal .modal-content::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 120px);
+  background-color: #fff;
+  content: "";
+  z-index: -1;
+}
+
+.team-modal.modal .row{
+  --bs-gutter-x: 75px;
+}
+.team-modal.modal .modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 0 108px 60px 0;
+}
+.team-modal-content h5 {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 400;
+}
+.team-modal-content span {
+  display: inline-block;
+  font-size: 22px;
+  color: #707070;
+  font-weight: 500;
+  padding-bottom: 14px;
+}
+.team-modal-content span::before{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5px;
+  width: 53px;
+  background-color: #707070;
+  content: "";
+}
+.team-modal-inner-content {
+  padding-top: 28px;
+}
+.team-modal-inner-content p {
+  font-size: 17px;
+  line-height: 1.17;
+  margin-bottom: 18px;
+  color: #4F5F62;
+}
+/* team modal */
+/* modal css */
+
 
 
 /* nice select css */
@@ -193,6 +315,19 @@ h6{
   z-index: 9;
 }
 /* nice select css */
+
+input:focus{
+  border: 0;
+  border-bottom: 2.5px solid #0977C8;
+  outline: none;
+}
+textarea{
+  border: 0;
+}
+textarea:focus{
+  border: 0;
+  outline: 0;
+}
 /* deafult css end */
 
 /* header section start */
@@ -563,7 +698,6 @@ h6{
 .content-block-info {
   padding-left: 54px;
   max-width: 1034px;
-  min-height: 300px;
 }
 .financial-planning-area.swm-sport-area .content-block-info{
   min-height: auto;
@@ -851,7 +985,167 @@ h6{
 .plan-details-area .plan-content:last-child{
   padding-bottom: 0;
 }
+
 /* plan details section end */
+
+/* fun fat section start */
+.counter-info {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1;
+  color: #0077C8;
+}
+.counter::before {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  height: 1.5px;
+  width: 69px;
+  background: #707070;
+  content: "";
+  transform: translateX(-50%);
+}
+.counter-wraper h5 {
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #242F45;
+}
+
+
+.fun-fat-area {
+  padding: 135px 0;
+}
+/* fun fat section end */
+
+/*  our team section start  */
+
+.our-team-area .content-block-info {
+  max-width: 996px;
+  padding-left: 92px;
+}
+.our-team-area .content-block-info p {
+  font-size: 17px;
+}
+.our-team-area .content-block-wrapper {
+  margin-bottom: 85px;
+}
+.our-team-area {
+  padding: 143px 0 157px;
+}
+
+.team-card-content h5 {
+  font-size: 24px;
+}
+.team-card-content p{
+  font-size: 20px;
+}
+.team-img:after {
+  content: "";
+  height: calc(100% + 24px);
+  width: calc(100% + 24px);
+  border: 1.5px solid #0977C8;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  z-index: -1;
+  transform: scale(0.93);
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+
+.team-card-wrapper:hover .team-img:after , .team-modal .team-img:after{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.our-team-area .row {
+  --bs-gutter-x: 38px;
+  --bs-gutter-y: 60px;
+}
+
+
+/* our team section end */
+
+/*  contact section start */
+.contact-form-area {
+  padding: 94px 0 117px;
+}
+.contact-form-area h1 {
+  margin-bottom: 30px;
+}
+
+/*  contact section end */
+.contact-form .form-group label {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.18;
+  color: #0077C8;
+  margin-bottom: 10px;
+}
+.contact-form .form-group{
+  margin-bottom: 30px;
+}
+.contact-form .form-group input ,
+.contact-form .form-group textarea{
+  width: 100%;
+  background-color: #FAFAFA;
+  border: 0;
+  padding: 8px 10px;
+}
+.contact-bottom-btn{
+  margin-top: 40px;
+}
+.map-img::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #F4F4F4 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  content: "";
+  z-index: 1;
+}
+.location-info {
+  padding-top: 80px;
+}
+.map-area {
+  padding-bottom: 135px;
+}
+.location-info h5 {
+  font-size: 40px;
+}
+
+.location-info p {
+  color: #0077C8;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+/* contact section end */
+
+/* sugarloaf-gives-area start */
+.sugarloaf-gives-area {
+  padding: 81px 0 93px;
+}
+.sugarloaf-gives-content {
+  font-size: 20px;
+  max-width: 496px;
+}
+.sugarloaf-gives-area .container {
+  max-width: 1170px;
+}
+.sugarloaf-gives-area .row {
+  --bs-gutter-x: 60px;
+}
+.sticky-title{
+  font-size: 50px;
+}
+/* sugarloaf-gives-area end */
 
 /* cta-area section start */
 .cta-area {
@@ -908,67 +1202,6 @@ h6{
   color: #0077b5;
 }
 
-
-/* modal css */
-.modal-backdrop {
-  --bs-backdrop-bg: #242F45;
-  --bs-backdrop-opacity: 0.91;
-}
-.modal {
-  --bs-modal-width: 624px;
-  --bs-modal-bg: #242F45;
-  --bs-modal-border-radius: 0;
-  --bs-modal-border-color: transparent;
-}
-.modal-header {
-  padding: 33px;
-  border-bottom: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.btn-close {
-    --bs-btn-close-bg: none;
-    --bs-btn-close-opacity: 1;
-    --bs-btn-close-hover-opacity: 1;
-    --bs-btn-close-focus-shadow: none;
-    --bs-btn-close-focus-opacity: 1;
-}
-.btn-close span {
-  display: inline-block;
-  font-family: 'HelveticaNeue' , sans-serif;
-  font-size: 28px;
-  line-height: 1;
-  color: #0077C8;
-  font-weight: 400;
-  transition: all 0.3s linear;
-}
-.btn-close span:hover{
-  color: #fff;
-}
-.modal-body {
-  position: relative;
-  flex: 1 1 auto;
-  padding: 0px 110px 100px 64px;
-}
-.modal-body p {
-  font-size: 17px;
-  line-height: 1.37;
-  margin-bottom: 32px;
-}
-.modal-info-wrapper h2 {
-  font-size: 30px;
-  margin-bottom: 23px;
-}
-.modal-body .modal-info-wrapper p {
-  color: #0077C8;
-  font-size: 21px;
-  line-height: 1.45;
-}
-/* modal css */
-
-
-
-
 /* cta-area section end */
 
 
@@ -1000,11 +1233,7 @@ h6{
   color: #6F6F6F;
   padding: 3px 0px;
 }
-input:focus{
-  border: 0;
-  border-bottom: 2.5px solid #0977C8;
-  outline: none;
-}
+
 .newsletter-input-wrapper .submit-btn {
   position: absolute;
   right: 0;
@@ -1122,3 +1351,33 @@ input:focus{
   opacity: 1;
 }
 /* footer area section end */
+
+/* login page start */
+.login-page-section {
+  height: 100vh;
+}
+.login-single-logo {
+  right: 22px;
+  bottom: 25px;
+  opacity: 0.4;
+}
+.login-main-img {
+  padding-right: 128px;
+}
+.login-content {
+  padding-left: 132px;
+  max-width: 533px;
+}
+.login-content h1 {
+  color: #242F45;
+  margin-bottom: 18px;
+}
+.login-content .sl-btn {
+  padding: 7.5px 24px;
+  margin-bottom: 40px;
+  width: calc(100% - 52px);
+}
+.login-content p {
+  font-size: 21px;
+}
+/* login page end */

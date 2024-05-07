@@ -12,6 +12,11 @@
       $(this).toggleClass("active");
     });
 
+   //  counter js
+   $('.counter').counterUp();
+
+
+
       
 
 

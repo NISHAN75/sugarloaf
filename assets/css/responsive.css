@@ -17,12 +17,28 @@
         display: inline-block;
         margin-right: 45px;
     }
+    .login-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .login-main-img {
+        padding-right: 40px;
+    }
+
 }
 @media (max-width: 1105px) {
     .advisor-img-1 {
         left: 45%;
     }
+    
+   
 } 
+@media (max-width: 1060px) {
+    .team-modal.modal {
+        --bs-modal-width: 950px;
+    }
+
+}
 /* max-width 1399 - min-width 992*/
 @media (max-width: 1199.98px) and (min-width: 992px) {
 }
@@ -33,11 +49,16 @@
         padding-left: 26px;
     }
 
-    /* all section padding fix */
-    .wealth-management-area , .invested-area {
+    /* all padding fix */
+    .wealth-management-area , .invested-area ,
+    .how-do-you-area , .how-do-you-area.cricle-bg-info , .fun-fat-area , .single-article-section , .our-team-area , .contact-form-area
+     {
         padding: 70px 0;
     }
-    /* all section padding fix */
+    .map-area {
+        padding-bottom: 70px;
+    }
+    /* all padding fix */
 
     /* wealth management section start */
     .wealth-management-area .row{
@@ -141,6 +162,36 @@
     }
     /* featured-article end */
 
+    /* team modal css  */
+    .team-modal.modal .row {
+        --bs-gutter-x: 40px;
+    }
+    .modal-dialog {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .team-modal.modal .modal-body {
+        padding: 0 30px 33px 30px;
+    }
+    .modal-header {
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    .team-modal-content h5 {
+        font-size: 35px;
+    }
+    .team-modal-content span {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+    /* team modal css  */
+
+    /* sugarloaf-gives-area  start  */
+    .sugarloaf-gives-area .row {
+        --bs-gutter-x: 30px;
+    }
+    /* sugarloaf-gives-area end */
+
     /* 991 end */
    
 }
@@ -150,6 +201,9 @@
     /* heading  */
     h1{
         font-size: 36px;
+    }
+    h2{
+        font-size: 30px;
     }
     /* heading  */
 
@@ -242,11 +296,17 @@
     }
     /* cta area end */
 
-    /* how do you section start */
-    .how-do-you-area , .how-do-you-area.cricle-bg-info {
+    /* all padding */
+    .how-do-you-area , .how-do-you-area.cricle-bg-info , .fun-fat-area , .single-article-section , .our-team-area , .contact-form-area {
         padding: 50px 0;
     }
-    /* how do you section end */
+    .location-info {
+        padding-top: 30px;
+    }
+    .map-area {
+        padding-bottom: 50px;
+    }
+    /* all padding */
 
     /* news-event-wrapper section start  */
     .filter-btn-wrapper {
@@ -277,9 +337,7 @@
     /* news-event-wrapper section end */
 
     /* single article section start  */
-    .single-article-section {
-        padding: 50px 0;
-    }
+
     .single-article-inner-content .post-title h1 {
         font-size: 25px;
     }
@@ -316,6 +374,80 @@
         padding-bottom: 40px;
     }
     /* plan details section end */
+
+    /* our team section start */
+    .counter-info {
+        font-size: 50px;
+    }
+    .counter-wraper {
+        margin-bottom: 30px;
+    }
+    .counter-wraper h5 {
+        margin-top: 25px;
+    }
+    .counter::before {
+        bottom: -10px;
+    }
+    .our-team-area .content-block-info{
+        padding-left: 0;
+    }
+    .our-team-area .content-block-wrapper {
+        margin-bottom: 40px;
+    }
+    .team-card-content h5 {
+        font-size: 20px;
+    }
+    .team-card-content p {
+        font-size: 17px;
+    }
+    .our-team-area .row {
+        --bs-gutter-x: 24px;
+        --bs-gutter-y: 38px;
+    }
+    .team-card-content {
+        margin-top: 18px !important;
+    }
+
+
+    /* our team section end */
+
+    /* team modal css */
+
+    .team-modal.modal .modal-content::before {
+        width: 100%;
+    }
+    .team-modal.modal .row {
+        --bs-gutter-x: 24px;
+        --bs-gutter-y: 40px;
+    }
+    .team-img {
+        max-width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* team modal css  */
+
+    /* contact section start */
+    .location-info h5 {
+        font-size: 36px;
+    }
+    .contact-bottom-btn {
+        justify-content: center !important;
+    }
+    /* contact section end */
+
+    /* sugarloaf-gives-area start */
+    .sugarloaf-gives-content {
+        font-size: 17px;
+        max-width: 100%;
+    }
+    .sugarloaf-gives-area {
+        padding: 50px 0;
+    }
+    .sticky-title {
+        font-size: 36px;
+    }
+    /* sugarloaf-gives-area end */
     
 
     /* 767 end */
@@ -331,7 +463,7 @@
     }
     /* all section padding fix */
     .wealth-management-area {
-        padding: 50px 0;
+        padding: 82px 0 45px;
     }
     .invested-area{
         padding: 65px 0 110px;
@@ -358,6 +490,44 @@
         width: 31px;
     }
     /* full width video section end  */
+    /* team section start */
+    .team-card-wrapper {
+        text-align: center;
+    }
+    /* team section end */
+
+    /* team modal section start */
+    .team-modal.modal .modal-body {
+        padding: 0 20px 33px 20px;
+    }
+    .modal-header {
+        padding: 20px;
+    }
+    .team-modal-content h5 {
+        font-size: 30px;
+    }
+    /* team modal section end */
+
+    /* login page start */
+    .login-content {
+        max-width: 100%;
+    }
+    .login-page-section .row {
+        --bs-gutter-y: 40px;
+        flex-direction: column-reverse;
+        height: auto !important;
+    }
+    .login-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+    .login-content .sl-btn {
+        width: 100%;
+    }
+
+
+    /* login page end */
   
 }
 /* max-width 479 */
@@ -385,7 +555,12 @@
     .filter-btn {
         padding: 8px;
     }
-   
+    .team-modal-content h5 {
+        font-size: 30px;
+    }
+    .wealth-management-area {
+        padding: 50px 0;
+    }
     /*  news-event-area section end  */
   
 }
